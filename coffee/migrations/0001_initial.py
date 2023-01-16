@@ -30,7 +30,6 @@ class Migration(migrations.Migration):
                 ('status', models.IntegerField(choices=[(0, 'Draft'), (1, 'Added')], default=0)),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='recipes', to=settings.AUTH_USER_MODEL)),
                 ('likes', models.ManyToManyField(blank=True, related_name='recipe_likes', to=settings.AUTH_USER_MODEL)),
-
             ],  
         ),
         migrations.CreateModel(
