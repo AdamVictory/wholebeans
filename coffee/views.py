@@ -137,10 +137,74 @@ class AddRecipe(View):
                 return render(request, 'add_recipe.html', context)
         else: 
             messages.error(request, 
-                          'Error: The form is invalid, '
-                          'please retry')
+                           'Error: The form is invalid, '
+                           'please retry')
             context = {'form': form}
             return render(request, 'add_recipe.html', context)
+
+
+class UserRecipe(generic.ListView): 
+    template_name = 'user_recipes.html'
+    model = Recipe
+    context_object_name = 'recipes'
+    paginate_by = 6 
+
+    def get_queryset(self): 
+        return Recipe.objects.filter(
+            author=self.request.user, status=1
+        ).order_by('-added_on')
+
+
+class UpdateRecipe(UpdateView):
+    model = Recipe 
+    template_name = 'update_recipe.html'
+    form_class = RecipeForm
+    success_url = reverse_lazy('user_recipes')
+
+
+class ModerateUpdateRecipe(UpdateView): 
+    model = Recipe
+    template_name = 'delete_recipe.html'
+    success_url = reverse_lazy('moderate_recipes')
+
+
+class ApproveRecipe(UpdateView): 
+    model = Recipe
+    template_name = 'approve_recipe.html'
+    form_class = ApproveForm
+    success_url = reverse_lazy('moderate_recipes')
+
+
+
+def search_results(request): 
+
+    if request.method == "GET": 
+        searched = request.GET['searched']
+        recipes = Recipe.objects.distinct(). filter( 
+            Q(recipe_name__icontains=searched) |
+            Q(description__icontains=searched) |
+            Q(ingredients_name__icontains=searched) |
+        )
+        return render(request, 'search_results.html', 
+                        {'searched': searched, 'recipes': recipes}) 
+    else: 
+        return render(request, 'search_results.html', {})
+
+
+class ModerateRecipes(generic.ListView): 
+    template_name = 'moderate_recipes.html'
+    model = Recipe
+    context_object_name = 'recipes'
+    paginate_by = 6
+
+    def get_queryset(self): 
+        return Recipe.objects.filter(
+             status=0
+        ).order_by('-added_on')
+        
+
+
+
 
         
 
