@@ -1,108 +1,148 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Wholebeans](docs/images/banner.png)
 
-Welcome AdamVictory,
+<h1 align=center>Wholebeans!!</h1>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<h2 align=center>Introduction</h2>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<p align=center>Wholebeans is a website for coffee lovers dedicated to sharing, creating and interacting with coffee recipes and baristas from all around the world. Whether you are just getting into coffee or are a professional barista, wholebeans is the one stop place for all coffee related recipes. <br><br>
+Browse through loads of different coffee recipes and even add your own! You can also comment and like other recipes to show your support. This website if perfect for anyone who is trying coffee from a new roaster or origin and is not sure how to diall it in for the perfect cup of coffee. Fear not, simply use the search bar to find a similar recipe for the coffee/wholebean you plan to use. <br><br> Users can now search through different recipes that have already been added to the site and registered users can create, update, edit and delete recipes from the website and via the admin panel. <br><br> Wholebeans has been buiot using the Django framework in python, HTML and CSS, and provides user authentication and full CRUD functionaility for recipes </p>
 
-## Gitpod Reminders
+[Visit the live site on Heroku](https://wholebeans.herokuapp.com/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Multi Devive Website Mockup Generator Screenshot](docs/images/responsive-screenshot.png)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## UX - User Experience Design 
 
-Another blue button should appear to click: _Open Browser_.
+## The Strategy Plane
+<hr>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Concept 
 
-A blue button should appear to click: _Make Public_,
+This project has created as part of the [Code Institute's](https://codeinstitute.net/) Diplome in Full-Stack Software Development. The aim of this project is to create a full-stack that will show the skills I have gained in HTML, CSS and Javascript. 
 
-Another blue button should appear to click: _Open Browser_.
+The main purpose of this website is to provide a platform for like minded coffee connoisseurs who are looking for inspiration to brew the best coffee they can while being able to create and add their own recipes. A superuser will be able to approve, edit and delete user recipes in order to manage the content on the website. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<h3>Site goals</h3>
 
-To log into the Heroku toolbelt CLI:
+* Create a platform that allows users to post their favourite coffee and share their thoughts as comments under posts. 
+* The website is designed to be intuitive and easy to navigate. 
+* The website was designed to be responsive and to meet all screen sizes. 
+* The website should focus on the display of the posts/recipes and present in a convenient way. 
+* The website should appeal to both at home coffee drinkers but also professional baristas acting as a a coffee community hub. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### User Stories
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+<strong>As a normal site user:</strong>
 
-------
+* I can search the website to find different recipes using keywords. 
+* I can see the view all page to see all recipes. 
+* I can view the comments of the registered users. 
+* I can select a coffee recipe if i wish to see more detail on it.
 
-## Release History
+<strong>As registered user:</strong>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* I can register for a wholebeans account to allow me to access all of the functions throughout the website. 
+* I can create and share my own coffee recipes to other users to see. 
+* I can edit my recipes if i decide to change them. 
+* I can delete my recipe if i dont like it anymore. 
+* I can comment on other users recipes to give my thoughts. 
+* I can like recipes to show my support for other users. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<strong>As a SuperUser:</strong>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* I can create draft posts if i dont have time to finish the post. 
+* I have the power to approve other users recipes before they are posted. 
+* I can edit other users recipes. 
+* I can delete other users recipes. 
+* I have access to the backend django admin system. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<strong>Agile Methodology</strong>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+I managed this projects functions and development through GitHubs projects Kanban board: 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+[Wholebeans Coffee Recipes - USER STORIES](https://github.com/users/AdamVictory/projects/1)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+<h3>Scope</h3>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* The website should be functional, easy to naviagte and intuitive. 
+* The frontend should present the content clearly. Visually appealing. 
+* Users to manipluate their content (CRUD). 
+* Allow logged in users to interact with other posts through comments. 
+* Search - all users can use the search bar to quickly find recipes. 
+* Comments and Likes - Users can comment and like other posts. 
+* Users can sign in and sign out to view the website from differnet perspectives. Also can register for an account. 
+* Custom 404 & 500 pages for good UI. 
+* Use bootstrap to make the site responsive, and custom CSS and Java script. 
+* Create a webpage application using the django framework. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## The Structure Plane 
+<hr>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<p>Wholebeans, will have four distint pages for first time users.</p>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  * Home page, Coffees, Register, Login, 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<p>Users without an account can navigate through these four pages and will be able to see the details of each coffee recipe. However they will not be able to add their own recipes or like/comment with other users until the have signed up. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+When the user creates an account and is logged in, the following pages will be displayed.</p>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* Home page, coffees, Logout and my recipes. 
 
-------
+<p>Logged in usera will be able to access all of the sites pages. They can access all the details of each recipe while being able to interact with them. 
+They will also be able to access all of their recipes, to add new posts, edit old obnes or delete them.</p>
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+## The Structure Plane 
+<hr>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Functional Scope 
 
-**How will this affect me?**
+### Flowchart 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Wholebeans Flowchar]()
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Database Schema 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+I created two custom models for this website. This ERD was created using [DrawSQL](https://drawsql.app/home)
 
-**So….?**
+![Database Schema](docs/images/databaseschema.png)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+## The Skeleton Plane
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Wireframes 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+I created the wireframe using [Figma](https://www.figma.com/)
 
-**Anything more?**
+![PICTURE]()
+![PICTURE]()
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## The Surface Plane
 
----
+## Design 
 
-Happy coding!
+### Color Scheme 
+
+![Color Scheme](docs/images/colour-scheme.png)
+
+I kept the colour scheme simple for this project as i didnt want to distract the user too myuch and wanted the focus to be put on the recipe details. 
+
+All colours were generated from using [imagecolorpicker.com](https://imagecolorpicker.com/en). 
+
+### Typography 
+
+Two fonts are used throughout this website. I got them from [Google Fonts](https://fonts.google.comn/). 
+'x' was used for the website name and headings and 'x' was used for all other texts. They work well together and create positive contrast. 
+
+![Font example](docs/images/fonts.png)
+
+### Imagery 
+
+I used [Unsplash](https://unsplash.com/) to source imagery for this project. The images are very high quality and give good inspiration for users on the purpose of this website. 
+
+![Background Image](docs/images/background.jpg)
+
+![Placeholder Image](docs/images/placeholder.jpg)
+

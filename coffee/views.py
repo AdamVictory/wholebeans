@@ -164,9 +164,18 @@ class UpdateRecipe(UpdateView):
 
 class ModerateUpdateRecipe(UpdateView): 
     model = Recipe
+    template_name = 'update_recipe.html'
+    success_url = reverse_lazy('moderate_recipes')
+
+class DeleteRecipe(DeleteView): 
+    model = Recipe
     template_name = 'delete_recipe.html'
     success_url = reverse_lazy('moderate_recipes')
 
+class ModerateDeleteRecipe(UpdateView): 
+    model = Recipe
+    template_name = 'delete_recipe.html'
+    success_url = reverse_lazy('moderate_recipes')
 
 class ApproveRecipe(UpdateView): 
     model = Recipe
