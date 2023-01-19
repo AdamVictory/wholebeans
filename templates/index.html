@@ -26,29 +26,55 @@
                     <a class="btn btn-danger delete-button" href="{% url 'add_recipe' %}"
                     role="button">Add Recipe</a>
                 </div>
-                
 
+                {% else %}
+                <!--Shows Sign up and log in buttons if user not logged in yet-->
+                <div> 
+                    <a class="btn btn-success edit-button" href="{% url 'account_signup' %"
+                        role="button">Sign Up</a>
+                    <a class="btn btn-danger delete-button" href="{% url 'account_login' %"
+                        role="button">Sign In</a>
+                </div>
+                {% endif %}
 
             </div>
         </div>
     </div>
 </div>
-
-
 </div>
-
 </header>
 
+<div class="row">
+    <div class="col-8 offset-2">
+        <h3 class="h3 display-2 text-center">Latest Coffee Recipes</h3>
+        <hr>
+    </div>
+</div>
 
-
-
+<!--Most recent 6 recipes added to the sit--> 
 <div class="container-fluid">
     <div class="row">
-
-        <!-- Blog Entries Column -->
+        <!-- Coffee Recipes -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                {% for post in post_list %}
+                {% for recipe in recipe_list %}
+
+                {% include 'includes/recipe_cards.html' with recipe=recipe %}
+
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
