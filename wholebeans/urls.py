@@ -10,5 +10,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')), 
 ]
 
-HANDLER404 = 'wholebeans.view.custom_404_error'
+HANDLER404 = 'wholebeans.views.custom_404_error'
 HANDLER500 = 'wholebeans.views.custom_500_error'

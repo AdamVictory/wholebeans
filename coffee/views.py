@@ -183,10 +183,10 @@ def search_results(request):
         recipes = Recipe.objects.distinct(). filter( 
             Q(recipe_name__icontains=searched) |
             Q(description__icontains=searched) |
-            Q(ingredients_name__icontains=searched) |
+            Q(ingredients__icontains=searched) 
         )
         return render(request, 'search_results.html', 
-                        {'searched': searched, 'recipes': recipes}) 
+                      {'searched': searched, 'recipes': recipes}) 
     else: 
         return render(request, 'search_results.html', {})
 
