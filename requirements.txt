@@ -5,6 +5,7 @@ dj-database-url==0.5.0
 Django==3.2.16
 django-allauth==0.52.0
 django-cloudinary-storage==0.3.0
+django-crispy-forms==1.14.0
 django-summernote==0.8.20.0
 Flask==2.2.2
 Flask-SQLAlchemy==2.5.1
