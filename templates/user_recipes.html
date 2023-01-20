@@ -14,6 +14,45 @@
 <div class="container-fluid">
     <div class="row">
     <!--Recipes-->
+    {% if recipes|length == 0 %}
+    <div class="center">
+        <p>You haven't created any recipes!</p>
+        <a class="btn btn-primary edit-button sub-btn" href="{% url 'add_recipe' %}" role="button">Add Recipe</a>
+    </div>
+
+    {% else %}
+    <div class="col-12 mt-3 left">
+        <div class="row">
+            {% for recipe in recipes %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="image-container">
+                            {% if "placeholder" in recipe.recipe_image.url %}
+                            <img class="recipe-image card-img top"
+                                src="https://res.cloudinary.com/dbacevukt/image/upload/v1674234611/mike-kenneally-TD4DBagg2wE-unsplash_mp4zrz.jpg"
+                                alt="Coffee wholebeans">
+                            {% else %}
+                            <img class="recipe-image card-img-top" src="{{ recipe.recipe_image.url }}" height="300" alt="{{ recipe.recipe_name }}">
+                            {% endif %}
+                        </div>
+                        <a href="{% url 'recipe_view' recipe.slug %}" class="recipe-link">
+                            <h2 class="card-title">{{ recipe.recipe_name }}</h2>
+                        </a>
+                        <p class="card-text">{{ recipe.description |safe }}</p>
+                        <hr>
+                        <p class="card-text text-muted h6">{{ recipe.added_on }} <i class="far fa-heart"></i>{{ recipe.number_of_likes }}</p>
+
+                        <!--Edit & Delete button -->
+                        <a class="btn btn-primary edit-button" href="{% url 'update_recipe"
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
 </div>
