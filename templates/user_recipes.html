@@ -45,15 +45,41 @@
 
                         <!--Edit & Delete button -->
                         <a class="btn btn-primary edit-button" href="{% url 'update_recipe"
-
-
-
+                            role="button">Edit</a>
+                        <a class="btn btn-danger delete-button" href="{% url 'delete_recipe' recipe.slug %}"
+                            role="button">Delete</a>
                     </div>
                 </div>
             </div>
+            {% if forloop.counter|divisble:3 %}
+        </div>
+        </div class="row">
+          {% endif %}
+          {% endfor %}
         </div>
     </div>
-
-    </div>
 </div>
+
+    {% if is_paginated %}
+    <nav aria-label="Page Navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li>
+                <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV</a>
+            </li>
+            [% endif %]
+            {% if page_obj.has_next %}
+            <li>
+                <a href="?page={{ page_obj.next_page_number }}" class="page-link">NEXT &raquo;</a>
+            </li>
+            [% endif %]
+        </ul>
+    </nav>
+    {% endif %}
+    {% endif %}
+
+</div>
+{% endblock %}
+
+
 
