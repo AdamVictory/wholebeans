@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+{% load crispy_forma_tags %}
+
+{% if user.is_authenticated and user.id == recipe.author.id or user.is_superuser %}
+
+<div class="container position-relative px-4 px-lg-5">
+    <div class="row">
+        <div class="col">
+            <h1>Edit recipe</h1>
+            <form method="POST" class="recipe-form">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <input type="submit" value="Update">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}
+
