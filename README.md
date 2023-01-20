@@ -146,3 +146,55 @@ I used [Unsplash](https://unsplash.com/) to source imagery for this project. The
 
 ![Placeholder Image](docs/images/placeholder.jpg)
 
+## Features 
+
+### Navigation Bar 
+
+There are three different navigation bars: 
+
+* Navigation Bar 1 - General Users
+
+This navbar gives the general user the choice to see the homepage, view all coffee recipes, log in or sign up. They can also use the search bar. 
+
+![Navigation Bar General Users](docs/images/nav1.png)
+
+![Navigation Search Bar](docs/images/search.png)
+
+* Navigation Bar 2 - Registered Users
+
+This navbar shows links to Add recipe, My recipes and Logout. 
+
+![Navigation Bar Registered Users](docs/images/nav2.png)
+
+* Navigation Bar 3 - Super User
+
+This nav bar is for the super user. There is an additional link that allows them to approve, edit or delete recipes. 
+
+![Navigation Bar Super User](docs/images/nav3.png)
+
+### Footer 
+
+My footer is very simple. It consists of social media links to push users to visit our social media channels. 
+It also consists of a sentance stating this website/project is for educational purposes only. \
+
+![Footer](docs/images/footer.png)
+
+
+### Other features 
+
+* Home page - Consists of a hero imahe, title and slogan, short description of the website and a call to action in the form of a Sign up or Log in button. It also shows the latest 6 recipes that have been added to the websiute 
+* All recipes - this page shows every recipe that has been added to the website. 
+* Add recipe - Thanks to summernote, the user can use their template to add their own coffee recipe. It allows basic styling, ordered lists and to upload images of their recipe. 
+* My recipes - A page where users can see all of the recipes they have created and added to the website. They can edit or delete the recipes here. 
+* Log in , Log out, Sign up - Users can log in or create an account if they wish to have access to functionality only available to reigistered users. 
+* Recipe search - Users can use the search bar to find specific recipes they have in mind. 
+* Recipe cards and details - All recipes appear on the recipe as cardfs, when clicked on it will link them to a recipe detail page. Providing them with even more infomation on the recipe and also showing them if other users have liked or commented on that recipe, 
+
+
+### Future features 
+
+* A social media element to the website similar to instagram where the users would have a profile and can post even more pictures while having followers. 
+
+
+
+
