@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--PAGE HEADER-->
+<div class="row">
+    <div class="col-8 offset-2">
+        <h3 class="h3 display-2 text-center title">Search Results</h3>
+        <hr>
+    </div>
+</div>
+
+    {% if searched %}
+        <h1 class="center">You searched for {{ searched }}</h1>
+        <br>
+        <div class="col-12 mt-3 left">
+        <div class="row">
+       {% if recipes %}
+            {% for recipe in recipes %}
+
+            {% include 'includes/recipe_cards.html' with recipe=recipe %}
+
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+                </div>
+            </div>
+        {% else %}
+        <p class="center">There are no recipes containing <strong>{{ searched }}</strong>. Search something else.</p>
+        {% endif %}
+    </div>
+
+    {% else %}
+        <p class="center message-to-user">You didn't search a recipe</p>
+    {% endif %}
+
+{% endblock %}
+
