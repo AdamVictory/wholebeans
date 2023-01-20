@@ -116,8 +116,9 @@ I created two custom models for this website. This ERD was created using [DrawSQ
 
 I created the wireframe using [Figma](https://www.figma.com/)
 
-![PICTURE]()
-![PICTURE]()
+![Home Wireframes](docs/images/figma-wireframe1.png)
+![All Recipes Wireframes](docs/images/figma-wireframes2.png)
+![NavBar Wireframes](docs/images/figma-wireframes3.png)
 
 ## The Surface Plane
 
@@ -194,6 +195,131 @@ It also consists of a sentance stating this website/project is for educational p
 ### Future features 
 
 * A social media element to the website similar to instagram where the users would have a profile and can post even more pictures while having followers. 
+
+
+## Testing 
+
+Testing was done throughout this entire project. Each user story view was tested to ensure this project worked from all perspectives. All testing information can be found in this [TESTING.md](TESTING.md) file
+
+### Technologies Used 
+
+* Python 
+    * The following modules were used: 
+          * asgiref==3.6.0
+          * cloudinary==1.31.0
+          * dj-database-url==0.5.0
+          * Django==3.2.16
+          * django-allauth==0.52.0
+          * django-cloudinary-storage==0.3.0
+          * django-crispy-forms==1.14.0
+          * django-summernote==0.8.20.0
+          * gunicorn==20.1.0
+          * oauthlib==3.2.2
+          * psycopg2==2.9.5
+          * PyJWT==2.6.0
+          * python3-openid==3.2.0
+          * pytz==2022.7.1
+          * requests-oauthlib==1.3.1
+          * sqlparse==0.4.3
+
+
+
+* Django 
+    * Django has been used as the main framweork for this full stack project. 
+    * Django AllAuth has been used for user authentication. 
+
+    <br>
+
+* Heroku - To deploy project
+* ElephantSQL - Database for project
+* Bootstrap - For styling of CSS/JS
+* Django templating - main framework
+* Figma - creating wireframes during design process. 
+* Hatchful - by shopify was used to design the logo and favicons. 
+* Font Awesome - icons 
+* Gitpod - Create/edit code
+* GitHub - Repository to store code 
+* Google Fonts - fonts for text 
+* Cloudinary - upload imahes ad cloud hosting 
+* DrawSQL.app - database schema
+* Lucidcharts - flow chart 
++ Tinypng 
+* JPG to WEBP | Cloudconvert 
+* Coolers - choose colour palette
+* DevTools - assist development
+* WAVE - To test accessibility 
+* PEP8 - To test python code
+* JShint - To test JavaScript
+* Jigsaw - To test CSS
+* Validator - To test HTML code 
+
+
+### Resources 
+
+* Code Institute's Codestar Django Blog was used at the start of this project to help me get started. 
+* Django documentation 
+* WSC Schools for CSS 
+* Google 
+* Stack overflow 
+* Slack 
+* Tutor support 
+
+## Deployment 
+
+### Deployment through Heroku 
+
+1. Log in to Heroku
+
+2. Select 'New' and then 'Create New App' 
+
+3. Name the project and select your region, then create app. The name must be unique. This will create an app within Heroku. 
+
+4. Add the database to the app, link your elepant sql url and hidden key to Heroku to connect the app to database. 
+
+5. Navigate to the settings tab, in the config vars section copy the DATABASE_URL for use in Django configuration. 
+
+6. Within the Django app, create a env.py file. Import the os library and set the environment variable for the DATABASE_URL. 
+
+7. Add a secret key to the app using os.environ. Add this secret key to the Heroku Config VARS. 
+
+8. In settings.py, import Path from pathlib, import os, import dj_database_url
+
+9. In terminal migrate models to new database connection. 
+
+10. Log in to cloudinary, in your env.py file add os.environ["CLOUDINARY_URL"]
+
+11. In heroku, add the CLOUDINARY_URL to config vars. Also add DISABLE_COLLECTSTATIC with value of 1, this must be removed before final deployment. 
+
+
+
+
+* In settings.py inside the Django project I changed DEBUG = False;
+* Also in the settings.py file I added X_FRAME_OPTIONS = "SAMEORIGIN";
+* In Heroku I went back to Settings > Config VARS and removed the DISABLE_COLLECTSTATIC var;
+* In Heroku I navigated to the Deploy section;
+* I clicked to connect to GitHub and searched for my repository for this project;
+* I clicked on manual deploy to build the App;
+* When finished, I clicked the View button, which redirected me to the live site.
+
+
+<h2>Fork</h2>
+
+* Forks let you make changes to a project without affecting the original repository. Follow this steps:
+1. Go to the repository page, can be accessed here.
+2. On top right, you select the Fork option and proceed.
+3. A duplicate will be created inside your repository.
+
+<h2>Clone</h2>
+
+* Clone let you create an identical repository to the original. Follow this steps:
+1. Go to the repository page, can be accessed here.
+2. Click on code drop down menu.
+3. Choose if you want to clone using HTTPS, SSH or GitHub CLI. Then select de copy button.
+4. Open your Git Bash in your IDE.
+5. Type git clone and then paste the URL you copied before.
+6. Press Enter to create your clone.
+
+
 
 
 
