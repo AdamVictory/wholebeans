@@ -62,7 +62,7 @@ hr {
 on the Code Institute Full Stack Developer Course */
 #main-image {
     height: 70vh;
-    background: url('https://res.cloudinary.com/dbacevukt/image/upload/v1674234611/mike-kenneally-TD4DBagg2wE-unsplash_mp4zrz.jpg') no-repeat center;
+    background: url('https://res.cloudinary.com/dbacevukt/image/upload/v1674311470/wholebeans_dzc6y7.webp') no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -77,7 +77,7 @@ on the Code Institute Full Stack Developer Course */
 @media screen and (max-width: 600px) {
     #main-image {
         height: 53vh;
-        background: url('https://res.cloudinary.com/dbacevukt/image/upload/v1674309711/banner_p3bis0.jpg') no-repeat center;
+        background: url('https://res.cloudinary.com/dbacevukt/image/upload/v1674311470/wholebeans_dzc6y7.webp') no-repeat center;
         padding-left: 5px;
         padding-right: 5px;
     }
