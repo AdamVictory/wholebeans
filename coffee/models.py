@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.utils.text import slugify
 
+
 STATUS = ((0, "Draft"), (1, "Added"))
 
 
@@ -13,7 +14,7 @@ class Recipe(models.Model):
     recipe_name = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, 
+        User, on_delete=models.CASCADE,
         related_name="recipes"
     )
     added_on = models.DateTimeField(auto_now=True)
@@ -24,8 +25,10 @@ class Recipe(models.Model):
     recipe_image = CloudinaryField('image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
-        User, related_name="recipe_likes", 
-        blank=True)
+        User,
+        related_name="recipe_likes",
+        blank=True
+    )
 
     class Meta:
         ordering = ['-added_on']
@@ -43,11 +46,19 @@ class Recipe(models.Model):
 
 class Comment(models.Model):
     """Comments Model"""
-    recipe = models.ForeignKey(Recipe,on_delete=models.CASCADE,related_name='comments')
+    recipe = models.ForeignKey(
+        Recipe,
+        on_delete=models.CASCADE,
+        related_name="comments"
+    )
     name = models.CharField(max_length=50)
     added_on = models.DateTimeField(auto_now=True)
     body = models.TextField()
-    likes = models.ManyToManyField(User,related_name="comment_likes",blank=True)
+    likes = models.ManyToManyField(
+        User,
+        related_name="comment_likes",
+        blank=True
+    )
     approved = models.BooleanField(default=False)
 
     class Meta:

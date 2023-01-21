@@ -1,152 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;700&family=Rock+Salt&display=swap');
 
 body {
-    font-family: 'Roboto', Times, serif;
-    background-color: #F9FAFC;
+    font-family: 'Noto Sans Display', sans-serif;
+    background-color: #F8FAF1;
 }
 
-.nav-bar-white {
-    background-color: white;
-    box-shadow: 0px 2px 5px aquamarine;
+.nav-bar-green {
+    background-color: #212910;
+    box-shadow: 0px 2px 5px #212910;
 }
 
-https://res.cloudinary.com/dbacevukt/image/upload/v1674161394/Screenshot_2023-01-10_at_15.18.01_l7i2ny.png
-
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
-}
-
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
-}
-
-.main-bg {
-    background-color: #F9FAFC;
-}
-
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
-}
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 20%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
-
-.btn-signup {
-    background-color: #23BBBB;
+.navbar-brand {
+    font-family: 'Rock Salt', sans-serif;
     color: #fff;
 }
 
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+.navbar-brand:hover {
+    color: #a1cd50;
 }
 
-.link {
-    color: #23BBBB;
+.nav-link {
+    font-family: 'Noto Sans Display', sans-serif;
+    color: #fff;
+}
+
+.nav-link:hover {
+    font-family: 'Noto Sans Display', sans-serif;
+    color: #fff;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* Code snippet for .grow taken from travis.media */
+/* https://travis.media/how-to-make-an-item-grow-on-hover-with-css/ */
+.grow {
+    transition: all .3s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}
+
+.search-button {
+    color: #fff;
+    border-color: #fff;
+}
+
+.search-button:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: #263B00;
+}
+
+hr {
+    border: 1px solid #263B00;
+}
+
+/* Code recycled from the Bootstrap Module
+on the Code Institute Full Stack Developer Course */
+#main-image {
+    height: 70vh;
+    background: url('https://res.cloudinary.com/dbacevukt/image/upload/v1674234611/mike-kenneally-TD4DBagg2wE-unsplash_mp4zrz.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    #main-image {
+        height: 53vh;
+        background: url('https://res.cloudinary.com/dbacevukt/image/upload/v1674309711/banner_p3bis0.jpg') no-repeat center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-on-top {
+    z-index: 100;
+}
+
+.page-title,
+.slogan {
+    font-family: 'Rock Salt', sans-serif;
+}
+
+.page-title {
+    font-size: 7.5vw;
+}
+
+.title {
+    color: #263B00;
+    padding-top: 10px;
+}
+
+.slogan {
+    font-size: initial;
+}
+
+.info-text {
+    font-size: initial;
+    margin-bottom: 5px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.recipe-link {
     text-decoration: none;
+    color: #263B00;
+    font-weight: bold;
 }
 
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
+.recipe-link:hover {
+    text-decoration: none;
+    color: #570000;
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
+.masthead {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
+.page-heading {
+    font-family: 'Rock Salt', sans-serif;
+    color: #fff;
+    font-size: 8.5em;
+    text-align: center;
+}
+
+.post-heading h1 {
+    font-family: 'Rock Salt', sans-serif;
+    color: #fff;
+}
+
+.post-heading .meta {
+    color: #fff;
+}
+
+.buttons a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.comments {
+    margin: 1.5% 10%;
+}
+
+.center {
+    text-align: center;
+}
+
+.edit-button {
+    background-color: #263B00;
+}
+
+.edit-button:hover {
+    background-color: #768b45;
+
+}
+
+.delete-button {
+    background-color: #951F1D;
+}
+
+.delete-button:hover {
+    background-color: #D85C4E;
+}
+
+.approve-button {
+    background-color: #768b45;
+}
+
+.approve-button:hover {
+    background-color: #263B00;
+}
+
+.sub-btn {
+    margin: 20px;
+}
+
+.page-link {
+    color: #570000;
+}
+
+.page-link:hover {
+    color: #263B00;
+}
+
+.social-links {
+    color: #768b45;
+}
+
+.social-links:hover {
+    color: #263B00;
+}
+
+.responsive-text {
+    font-size: 3vw;
 }

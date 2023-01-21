@@ -13,7 +13,8 @@ class RecipeAdmin(SummernoteModelAdmin):
     summernote_fields = ('description', 'ingredients', 'method')
     actions = ['approve_recipe']
 
-    
+    def approve_recipe(self, request, queryset):
+        queryset.update(status=1)
 
 
 @admin.register(Comment)
@@ -26,6 +27,3 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
-
-
-

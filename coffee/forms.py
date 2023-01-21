@@ -1,11 +1,11 @@
-from .models import Comment, Recipe 
+from .models import Comment, Recipe
 from django import forms
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 from django.forms import HiddenInput
 
 
-class CommentForm(forms.ModelForm): 
-    """Comment Form"""
+class CommentForm(forms.ModelForm):
+    """Comment Form """
     class Meta:
         model = Comment
         fields = ('body',)
@@ -31,7 +31,7 @@ class RecipeForm(forms.ModelForm):
 
 class ApproveForm(forms.ModelForm):
     """Form to Approve Recipes"""
-    class Meta: 
+    class Meta:
         model = Recipe
         fields = (
             'slug',
@@ -40,4 +40,3 @@ class ApproveForm(forms.ModelForm):
         widgets = {
             'slug': HiddenInput(),
         }
-
