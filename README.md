@@ -117,8 +117,7 @@ I created two custom models for this website. This ERD was created using [DrawSQ
 I created the wireframe using [Figma](https://www.figma.com/)
 
 ![Home Wireframes](docs/images/figma-wireframe1.png)
-![All Recipes Wireframes](docs/images/figma-wireframes2.png)
-![NavBar Wireframes](docs/images/figma-wireframes3.png)
+![All Recipes Wireframes](docs/images/figma-wireframe2.png)
 
 ## The Surface Plane
 
@@ -289,6 +288,10 @@ Testing was done throughout this entire project. Each user story view was tested
 10. Log in to cloudinary, in your env.py file add os.environ["CLOUDINARY_URL"]
 
 11. In heroku, add the CLOUDINARY_URL to config vars. Also add DISABLE_COLLECTSTATIC with value of 1, this must be removed before final deployment. 
+
+12. Add cloudinary libraries to list of apps. 
+
+13. In settings.py add the STATIC files settings
 
 
 
