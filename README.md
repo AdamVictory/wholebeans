@@ -129,24 +129,22 @@ test
 
 ![Color Scheme](docs/images/colour-scheme.png)
 
-I kept the colour scheme simple for this project as i didnt want to distract the user too myuch and wanted the focus to be put on the recipe details. 
+I kept the colour scheme simple for this project as i didnt want to distract the user too much and wanted the focus to be put on the recipe details. The blue is #2596be and the orange is #be4d25 .
 
 All colours were generated from using [imagecolorpicker.com](https://imagecolorpicker.com/en). 
 
 ### Typography 
 
 Two fonts are used throughout this website. I got them from [Google Fonts](https://fonts.google.comn/). 
-'x' was used for the website name and headings and 'x' was used for all other texts. They work well together and create positive contrast. 
+The font family for this project was: 'Sofia Sans', sans-serif; . I wanted to keep the font very simple and easy to read as there will be a lot of text within each coffee recipe. 
 
-![Font example](docs/images/fonts.png)
+![Font example](docs/images/font.png)
 
 ### Imagery 
 
-I used [Unsplash](https://unsplash.com/) to source imagery for this project. The images are very high quality and give good inspiration for users on the purpose of this website. 
+I used [Unsplash](https://unsplash.com/) to source the main image for this project. The image is high quality and give good inspiration for users on the purpose of this website. I didn't want to add too many images as I knew the users would be doing that themselves. This image also acts as a default placeholder for those who do not have images to post themselves.  
 
-![Background Image](docs/images/background.jpg)
-
-![Placeholder Image](docs/images/placeholder.jpg)
+![Background Image](docs/images/wholebeans.png)
 
 ## Features 
 
@@ -173,6 +171,17 @@ This navbar shows links to Add recipe, My recipes and Logout.
 This nav bar is for the super user. There is an additional link that allows them to approve, edit or delete recipes. 
 
 ![Navigation Bar Super User](docs/images/nav3.png)
+
+### Banner
+
+This banner gives the general user / logged out user a clear idea of what the site should be used for and also two call to action buttons that states "Sign Up" and "Sign in". 
+
+![Banner Logged Out](docs/images/bannerout.png)
+
+
+Once the user has logged in their banner will now look like this. The new call to action button states "Add Recipe"
+![Banner Logged In](docs/images/bannerin.png)
+
 
 ### Footer 
 
