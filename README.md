@@ -1,11 +1,11 @@
 ![Wholebeans](docs/images/banner.png)
 
-<h1 align=center>Wholebeans!!</h1>
+<h1 align=center>Wholebeans - A Speciality Coffee Recipe Website</h1>
 
 <h2 align=center>Introduction</h2>
 
-<p align=center>Wholebeans is a website for coffee lovers dedicated to sharing, creating and interacting with coffee recipes and baristas from all around the world. Whether you are just getting into coffee or are a professional barista, wholebeans is the one stop place for all coffee related recipes. <br><br>
-Browse through loads of different coffee recipes and even add your own! You can also comment and like other recipes to show your support. This website if perfect for anyone who is trying coffee from a new roaster or origin and is not sure how to diall it in for the perfect cup of coffee. Fear not, simply use the search bar to find a similar recipe for the coffee/wholebean you plan to use. <br><br> Users can now search through different recipes that have already been added to the site and registered users can create, update, edit and delete recipes from the website and via the admin panel. <br><br> Wholebeans has been buiot using the Django framework in python, HTML and CSS, and provides user authentication and full CRUD functionaility for recipes </p>
+<p align=center>Wholebeans is a website for speciality coffee lovers dedicated to sharing, creating and interacting with coffee recipes and baristas from all around the world. Whether you are just getting into coffee or are a professional barista, wholebeans is the one stop place for all coffee related recipes. <br><br>
+Browse through loads of different coffee recipes and even add your own! You can also comment and like other recipes to show your support. This website if perfect for anyone who is trying coffee from a new roaster or origin and is not sure how to diall it in for the perfect cup of coffee. Fear not, simply use the search bar to find a similar recipe for the wholebeans you plan to use. <br><br> Users can now search through different recipes that have already been added to the site and registered users can create, update, edit and delete recipes from the website and via the admin panel. <br><br> Wholebeans has been buiot using the Django framework in python, HTML and CSS, and provides user authentication and full CRUD functionaility for recipes </p>
 
 [Visit the live site on Heroku](https://wholebeans.herokuapp.com/)
 
@@ -19,24 +19,24 @@ Browse through loads of different coffee recipes and even add your own! You can 
 
 ### Concept 
 
-This project has created as part of the [Code Institute's](https://codeinstitute.net/) Diplome in Full-Stack Software Development. The aim of this project is to create a full-stack that will show the skills I have gained in HTML, CSS and Javascript. 
+This project was created as part of the [Code Institute's](https://codeinstitute.net/) Diploma in Full-Stack Software Development. The aim of this project is to create a full-stack website that will show the skills I have gained in HTML, CSS and Javascript. 
 
-The main purpose of this website is to provide a platform for like minded coffee connoisseurs who are looking for inspiration to brew the best coffee they can while being able to create and add their own recipes. A superuser will be able to approve, edit and delete user recipes in order to manage the content on the website. 
+The main purpose of this website is to provide a platform for like minded coffee connoisseurs who are looking for inspiration to brew the best coffee they can while being able to create and add their own recipes. A SuperUser will be able to approve, edit and delete user recipes in order to manage the content on the website. The targe audience for this website is anyone interested in speciality coffee from home coffee drinkers to professional baristas. There are so many variables to creating the perfect cup of coffee from the origin of the wholebeans used, brewing device and technique, and even the type of water used. This website is to be used almost like a diary and guide for coffee lovers. 
 
 <h3>Site goals</h3>
 
-* Create a platform that allows users to post their favourite coffee and share their thoughts as comments under posts. 
+* Create a platform that allows users to post their favourite coffee and share their thoughts through comments and likes under posts. 
 * The website is designed to be intuitive and easy to navigate. 
 * The website was designed to be responsive and to meet all screen sizes. 
-* The website should focus on the display of the posts/recipes and present in a convenient way. 
+* The website should focus on the display of the posts/recipes and present in a convenient way that is easy to follow while you make your coffee. 
 * The website should appeal to both at home coffee drinkers but also professional baristas acting as a a coffee community hub. 
 
 ### User Stories
 
-<strong>As a normal site user:</strong>
+<strong>As a basic site user:</strong>
 
 * I can search the website to find different recipes using keywords. 
-* I can see the view all page to see all recipes. 
+* I can see the view all page to see all coffee recipes. 
 * I can view the comments of the registered users. 
 * I can select a coffee recipe if i wish to see more detail on it.
 
@@ -52,7 +52,7 @@ The main purpose of this website is to provide a platform for like minded coffee
 <strong>As a SuperUser:</strong>
 
 * I can create draft posts if i dont have time to finish the post. 
-* I have the power to approve other users recipes before they are posted. 
+* I can approve other users recipes before they are posted. 
 * I can edit other users recipes. 
 * I can delete other users recipes. 
 * I have access to the backend django admin system. 
@@ -101,7 +101,7 @@ They will also be able to access all of their recipes, to add new posts, edit ol
 
 ### Flowchart 
 
-![Wholebeans Flowchar]()
+![Wholebeans Flowchart](docs/images/figma-flowchart.png)
 
 ## Database Schema 
 
