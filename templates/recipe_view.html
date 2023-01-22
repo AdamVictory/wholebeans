@@ -1,4 +1,4 @@
-{% extends 'base.html' %} 
+{% extends "base.html" %} 
 
 {% block content %}
 
@@ -8,9 +8,9 @@
 
 <!-- Page Header-->
 {% if "placeholder" in recipe.recipe_image.url %}
-<header class="mastead" style="background-image: url('{% static 'images/wholebeans.webp' %}');">
+<header class="masthead" style="background-image: url('{% static 'images/wholebeans.webp' %}');">
     {% else %}
-    <header class="masthead" style="background-image: url('{{ recipe.recipe_image.url' }}');">
+    <header class="masthead" style="background-image: url('{{ recipe.recipe_image.url }}');">
         {% endif %}
         <div class="opaque-overlay">&nbsp;</div>
         <div class="container position-relative px-4 px-lg-5">
@@ -61,22 +61,22 @@
 
                             <button type="submit" name="recipe_id" value="{{ recipe.slug }}"
                                 class="btn-like">
-                                <i class="fas fa-heart"></i> 
+                                <i class="far fa-heart"></i> 
                             </button>
                         
                         {% endif %}
                     </form>
                     {% else %}
 
-                    <span class="text-secondary"><i class="far fa-heart"></i></span>
+                    <span class="text-secondary"> <i class="far fa-heart"></i></span>
                     {% endif %}
                     <span class="text-secondary"> {{ recipe.number_of_likes}}</span>
 
                     <div class="col-1 inline comments">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary">
-                            <i class="far fa-comments"></i> {{ total_comments }}</strong>
-                        {% endif %}
+                            <i class="far fa-comments"> </i> {{ total_comments }}</strong>
+                        {% endwith %}
                     </div>
                     </div>
 
@@ -84,10 +84,10 @@
                     {% if user.is_authenticated and user.id == recipe.author.id %}
                         <div class="buttons">
                             <a class="btn btn-success edit-button"
-                                href="{% url 'update_recipe' recipe.slug %}" role="buttons">Edit</a>
+                                href="{% url 'update_recipe' recipe.slug %}" role="button">Edit</a>
 
                             <a class="btn btn-danger delete-button"
-                                href="{% url 'delete_recipe' recipe.slug %}" role="buttons">Delete</a>
+                                href="{% url 'delete_recipe' recipe.slug %}" role="button">Delete</a>
                         </div>
                     {% endif %}
                 </div>
@@ -123,7 +123,7 @@
                 </div>
                 {% else %}
                 <!--Allows user to comment when logged in-->
-                {% if <user class="is_authenticated"></user> %}
+                {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
