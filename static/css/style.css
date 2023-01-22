@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 body {
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: #F8FAF1;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #fff;
 }
 
@@ -20,12 +20,12 @@ body {
 }
 
 .nav-link {
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #fff;
 }
 
 .nav-link:hover {
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #be4d25;
 }
 
@@ -98,7 +98,7 @@ on the Code Institute Full Stack Developer Course */
 
 .page-title,
 .slogan {
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .page-title {
@@ -156,14 +156,14 @@ on the Code Institute Full Stack Developer Course */
 }
 
 .page-heading {
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #fff;
     font-size: 8.5em;
     text-align: center;
 }
 
 .post-heading h1 {
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #fff;
 }
 
