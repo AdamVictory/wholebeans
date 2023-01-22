@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
 body {
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: #F8FAF1;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Rock Salt', sans-serif;
+    font-family:  'Roboto Mono', monospace;
     color: #fff;
 }
 
@@ -20,12 +20,12 @@ body {
 }
 
 .nav-link {
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #fff;
 }
 
 .nav-link:hover {
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #fff;
 }
 
@@ -98,7 +98,7 @@ on the Code Institute Full Stack Developer Course */
 
 .page-title,
 .slogan {
-    font-family: 'Rock Salt', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 .page-title {
@@ -156,14 +156,14 @@ on the Code Institute Full Stack Developer Course */
 }
 
 .page-heading {
-    font-family: 'Rock Salt', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #fff;
     font-size: 8.5em;
     text-align: center;
 }
 
 .post-heading h1 {
-    font-family: 'Rock Salt', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #fff;
 }
 
