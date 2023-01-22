@@ -108,7 +108,7 @@
                            {{ comment.added_on }}
                         </span>
                     </p>
-                    {{ comment.body | linebreaks }
+                    {{ comment.body | linebreaks }}
                 </div>
                 {% endfor %}
             </div>
@@ -130,7 +130,7 @@
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-success edit-button btn-lg sub0-btn">Submit</button>
+                    <button type="submit" class="btn btn-success edit-button btn-lg sub-btn">Submit</button>
                 </form>
                 {% endif %}
                 {% endif %}
