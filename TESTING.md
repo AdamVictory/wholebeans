@@ -14,17 +14,17 @@ Python testing was done by using the [PEP8 Online](http://pep8online.com/). All 
 Results can be found here: 
 * Wholebeans folder 
    * [asgi.py](docs/testing%20/PEP8-HS-asgi.png)
-   * [settings.py](docs/testing/PEP8-HS-settings.png)
-   * [urls.py](docs/testing/PEP8-HS-urls.png)
-   * [views.py](docs/testing/PEP8-HS-views.png)
-   * [wsgi.py](docs/testing/PEP8-HS-wsgi.png)
+   * [settings.py](docs/testing%20/PEP8-HS-settings.png)
+   * [urls.py](docs/testing%20/PEP8-HS-urls.png)
+   * [views.py](docs/testing%20/PEP8-HS-views.png)
+   * [wsgi.py](docs/testing%20/PEP8-HS-wsgi.png)
 * Coffee folder 
-   * [admin.py](docs/testing/PEP8-R-admin.png)
-   * [apps.py](docs/testing/PEP8-R-apps.png)
-   * [forms.py](docs/testing/PEP8-R-forms.png)
-   * [models.py](docs/testing/PEP8-R-models.png)
-   * [urls.py](docs/testing/PEP8-R-urls.png)
-   * [views.py](docs/testing/PEP8-R-views.png)
+   * [admin.py](docs/testing%20/PEP8-R-admin.png)
+   * [apps.py](docs/testing%20/PEP8-R-apps.png)
+   * [forms.py](docs/testing%20/PEP8-R-forms.png)
+   * [models.py](docs/testing%20/PEP8-R-models.png)
+   * [urls.py](docs/testing%20/PEP8-R-urls.png)
+   * [views.py](docs/testing%20/PEP8-R-views.png)
 
 ### Test Case 002
 ![Test Case 002](docs/testing/css-validation.png)
