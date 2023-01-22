@@ -235,16 +235,13 @@ Testing was done throughout this entire project. Each user story view was tested
 * ElephantSQL - Database for project
 * Bootstrap - For styling of CSS/JS
 * Django templating - main framework
-* Figma - creating wireframes during design process. 
+* Figma - creating wireframes, flowchart and database schema. 
 * Hatchful - by shopify was used to design the logo and favicons. 
 * Font Awesome - icons 
 * Gitpod - Create/edit code
 * GitHub - Repository to store code 
 * Google Fonts - fonts for text 
 * Cloudinary - upload imahes ad cloud hosting 
-* DrawSQL.app - database schema
-* Lucidcharts - flow chart 
-+ Tinypng 
 * JPG to WEBP | Cloudconvert 
 * Coolers - choose colour palette
 * DevTools - assist development

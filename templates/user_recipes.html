@@ -43,8 +43,8 @@
                         <hr>
                         <p class="card-text text-muted h6">{{ recipe.added_on }} <i class="far fa-heart"></i>{{ recipe.number_of_likes }}</p>
 
-                        <!--Edit & Delete button -->
-                        <a class="btn btn-primary edit-button" href="{% url 'update_recipe"
+                        <!--Edit & Delete buttons -->
+                        <a class="btn btn-primary edit-button" href="{% url 'update_recipe' recipe.slug %}"
                             role="button">Edit</a>
                         <a class="btn btn-danger delete-button" href="{% url 'delete_recipe' recipe.slug %}"
                             role="button">Delete</a>
@@ -53,7 +53,7 @@
             </div>
             {% if forloop.counter|divisibleby:3 %}
         </div>
-        </div class="row">
+        <div class="row">
           {% endif %}
           {% endfor %}
         </div>
@@ -61,26 +61,25 @@
 </div>
 
     {% if is_paginated %}
-    <nav aria-label="Page Navigation">
+    <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
             <li>
                 <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV</a>
             </li>
-            [% endif %]
+            {% endif %}
             {% if page_obj.has_next %}
             <li>
                 <a href="?page={{ page_obj.next_page_number }}" class="page-link">NEXT &raquo;</a>
             </li>
-            [% endif %]
+            {% endif %}
         </ul>
     </nav>
     {% endif %}
     {% endif %}
+   
 
 </div>
-
 {% endblock %}
-
 
 
