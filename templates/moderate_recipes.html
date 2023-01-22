@@ -24,7 +24,7 @@
                             <div class="image-container">
                                 {% if "placeholder" in recipe.recipe_image.url %}
                                <img class="recipe-image card-img-top"
-                                   src=""
+                                   src="https://res.cloudinary.com/dbacevukt/image/upload/v1674311470/wholebeans_dzc6y7.webp"
                                    alt="Coffee wholebeans">
                                 {% else %}
                                 <img class="recipe-image card-img-top"
@@ -50,11 +50,11 @@
                         </div>
                     </div>
                 </div>
-                {% if forloop.counter|divisinleby:3}
+                {% if forloop.counter|divisibleby:3 %}
             </div>
             <div class="row">
-              {% endif %}
-              {% endfor %}
+               {% endif %}
+               {% endfor %}
             </div>
         </div>
         {% else %}
@@ -72,8 +72,8 @@
             </li>
             {% endif %}
             {% if page_obj.has_next %}
-            </li>
-                <a href="?page={{ page_obj.next_page_number }}" class="page-link">NEXT &raquo; </a>
+            <li>
+                <a href="?page={{ page_obj.next_page_number }}" class="page-link">NEXT &raquo;</a>
             </li>
             {% endif %}
         </ul>
@@ -81,11 +81,3 @@
     {% endif %}
 </div>
 {% endblock %}
-
-
-
-
-
-
-
-</div>
