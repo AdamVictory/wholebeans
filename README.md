@@ -105,8 +105,6 @@ They will also be able to access all of their recipes, to add new posts, edit ol
 
 ## Database Schema 
 
-I created two custom models for this website. This ERD was created using [DrawSQL](https://drawsql.app/home)
-
 ![Database Schema](docs/images/databaseschema.png)
 
 
@@ -121,7 +119,6 @@ I created the wireframe using [Figma](https://www.figma.com/)
 
 ## The Surface Plane
 
-test
 
 ## Design 
 
