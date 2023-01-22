@@ -76,7 +76,7 @@ on the Code Institute Full Stack Developer Course */
 
 @media screen and (max-width: 600px) {
     #main-image {
-        height: 53vh;
+        height: 60vh;
         background: url('https://res.cloudinary.com/dbacevukt/image/upload/v1674311470/wholebeans_dzc6y7.webp') no-repeat center;
         padding-left: 5px;
         padding-right: 5px;
