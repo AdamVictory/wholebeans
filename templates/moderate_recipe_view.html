@@ -4,7 +4,7 @@
 
 {% load static %}
 
-{% load crispy_forma_tags %}
+{% load crispy_forms_tags %}
 
 <!--Page Header-->
 {% if "placeholder" in recipe.recipe_image.url %}
@@ -20,7 +20,7 @@
                         <h1>{{ recipe.recipe_name }}</h1>
                         <span class="meta">
                             Added by 
-                            {{ recipe.author }}| {{ recipe.added_on }}
+                            {{ recipe.author }} | {{ recipe.added_on }}
                         </span>
                     </div>
                 </div>
@@ -62,6 +62,3 @@
     </article>
 
     {% endblock %}
-
-
-
