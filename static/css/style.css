@@ -6,8 +6,8 @@ body {
 }
 
 .nav-bar-green {
-    background-color: #212910;
-    box-shadow: 0px 2px 5px #212910;
+    background-color: #2596be;
+    box-shadow: 0px 2px 5px #be4d25;
 }
 
 .navbar-brand {
@@ -16,7 +16,7 @@ body {
 }
 
 .navbar-brand:hover {
-    color: #a1cd50;
+    color: #be4d25;
 }
 
 .nav-link {
@@ -51,11 +51,11 @@ body {
 .search-button:hover {
     color: #fff;
     border-color: #fff;
-    background-color: #263B00;
+    background-color: #2596be;
 }
 
 hr {
-    border: 1px solid #263B00;
+    border: 1px solid #2596be;
 }
 
 /* Code recycled from the Bootstrap Module
@@ -106,7 +106,7 @@ on the Code Institute Full Stack Developer Course */
 }
 
 .title {
-    color: #263B00;
+    color: #2596be;
     padding-top: 10px;
 }
 
