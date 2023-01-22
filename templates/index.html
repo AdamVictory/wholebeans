@@ -9,16 +9,16 @@
 <div id="main-image" class="container-fluid, image-container">
 <div class="opaque-overlay">&nbsp;</div>
 <div class="row text-on-top">
-    <div class="'col-12">
-        <div class="'text-center text-white header-text">
+    <div class="col-12">
+        <div class="text-center text-white header-text">
             <h1 class="text-center page-title">Wholebeans</h1>
             <h2 class="slogan">Coffee Recipes</h2>
             <br>
             <div class="info-text">
                 <p>Looking to share your favourite coffee recipe? Trying to find a recipe for new coffee beans?</p>
-                <p>Meet Wholebeans! The new online barista hub to get inspiration for coffee recipes.</p>
+                <p>Meet Wholebeans! The new online coffee hub to get inspiration for coffee recipes.</p>
                 <p>Share and connect with baristas and coffee enthusiasts from all over the world.</p>
-                <p>Search the site to find new recipes that are dependant on the origin of the cofffee. Log in/sign up to share your own recipes!</p>
+                <p>Search the site to find new recipes. Log in/sign up to share your own recipes!</p>
 
                 {% if user.is_authenticated %}
                 <!--Shows Add Recipe button if user is logged in-->
@@ -30,9 +30,9 @@
                 {% else %}
                 <!--Shows Sign up and log in buttons if user not logged in yet-->
                 <div> 
-                    <a class="btn btn-success edit-button" href="{% url 'account_signup' %"
+                    <a class="btn btn-success edit-button" href="{% url 'account_signup' %}"
                         role="button">Sign Up</a>
-                    <a class="btn btn-danger delete-button" href="{% url 'account_login' %"
+                    <a class="btn btn-danger delete-button" href="{% url 'account_login' %}"
                         role="button">Sign In</a>
                 </div>
                 {% endif %}
@@ -71,4 +71,3 @@
     </div>
 </div>
 {% endblock %}
-
