@@ -26,7 +26,7 @@ body {
 
 .nav-link:hover {
     font-family: 'Sofia Sans', sans-serif;
-    color: #fff;
+    color: #be4d25;
 }
 
 .text-white {
@@ -50,7 +50,7 @@ body {
 
 .search-button:hover {
     color: #fff;
-    border-color: #fff;
+    border-color: #be4d25;
     background-color: #2596be;
 }
 
@@ -131,13 +131,13 @@ on the Code Institute Full Stack Developer Course */
 
 .recipe-link {
     text-decoration: none;
-    color: #263B00;
+    color: #be4d25;
     font-weight: bold;
 }
 
 .recipe-link:hover {
     text-decoration: none;
-    color: #570000;
+    color: #be4d25;
 }
 
 .masthead {
@@ -194,16 +194,16 @@ on the Code Institute Full Stack Developer Course */
 }
 
 .edit-button {
-    background-color: #263B00;
+    background-color: #be4d25;
 }
 
 .edit-button:hover {
-    background-color: #768b45;
+    background-color: #be4d25;
 
 }
 
 .delete-button {
-    background-color: #951F1D;
+    background-color: #be4d25;
 }
 
 .delete-button:hover {
@@ -211,11 +211,11 @@ on the Code Institute Full Stack Developer Course */
 }
 
 .approve-button {
-    background-color: #768b45;
+    background-color: #be4d25;
 }
 
 .approve-button:hover {
-    background-color: #263B00;
+    background-color: #be4d25;
 }
 
 .sub-btn {
@@ -223,19 +223,19 @@ on the Code Institute Full Stack Developer Course */
 }
 
 .page-link {
-    color: #570000;
+    color: #be4d25;
 }
 
 .page-link:hover {
-    color: #263B00;
+    color: #be4d25;
 }
 
 .social-links {
-    color: #768b45;
+    color: #be4d25;
 }
 
 .social-links:hover {
-    color: #263B00;
+    color: #be4d25;
 }
 
 .responsive-text {
