@@ -26,7 +26,7 @@ Results can be found here:
    * [views.py](docs/testing%20/PEP8-R-views.png)
 
 ### Test Case 002
-![Test Case 002]
+
 
 ### CSS Validation 
 
@@ -66,7 +66,7 @@ Testing performed well on Lighthouse for desktop devices:
 
 ![Lighthouse Screenshot for Desktop](docs/testing%20/lighthouse1.png)
 
-It did not perform as well for mobile. However this is to do with django, bootstrap, cloudinary and font awesome., 
+It did not perform as well for mobile. However this is to do with django, bootstrap, cloudinary and font awesome. 
 
 ![Lighthouse Screenshot for Mobile](docs/testing%20/lighthouse2.png)
 
