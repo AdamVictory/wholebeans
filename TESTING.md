@@ -26,17 +26,17 @@ Results can be found here:
    * [views.py](docs/testing%20/PEP8-R-views.png)
 
 ### Test Case 002
-![Test Case 002](docs/testing/css-validation.png)
+![Test Case 002]
 
 ### CSS Validation 
 
 Custom CSS has been validated using [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/).
 It passed. However some warnings were raised but these were to do with extensions and Google fonts. 
 
-![CSS Validation Screenshot](docs/testing/css-validation-screenshot.png)
+![CSS Validation Screenshot](docs/testing%20/css-validation-screenshot.png)
 
 ### Test Case 003 
-![Test Case 002](docs/testing/html-testing-report.png)
+![Test Case 002](docs/testing%20/html-testing-report.png)
 
 On the website I made I used the dev tools to copy the rendered html code and pasted in into this validator. It returned no errors using the Nu HTML checker.  
 
@@ -64,11 +64,11 @@ The full report can be found [here](https://wave.webaim.org/report#/https://whol
 
 Testing performed well on Lighthouse for desktop devices: 
 
-![Lighthouse Screenshot for Desktop](docs/testing/lighthouse1.png)
+![Lighthouse Screenshot for Desktop](docs/testing%20/lighthouse1.png)
 
 It did not perform as well for mobile. However this is to do with django, bootstrap, cloudinary and font awesome., 
 
-![Lighthouse Screenshot for Mobile](docs/testing/lighthouse2.png)
+![Lighthouse Screenshot for Mobile](docs/testing%20/lighthouse2.png)
 
 
 Back to the [README.md](README.md)
