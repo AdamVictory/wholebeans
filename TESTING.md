@@ -5,7 +5,6 @@ Back to the [README.md](README.md)
 ## Testing Schedule
 
 ### Test Case 001 
-![Test Case 001](docs/tetsing/PEP8-validation.png)
 
 ### Python Validation - PEP8 
 
@@ -43,7 +42,6 @@ It passed. However some warnings were raised but these were to do with extension
 On the website I made I used the dev tools to copy the rendered html code and pasted in into this validator. It returned no errors using the Nu HTML checker.  
 
 ### Test Case 004 
-![Test Case 002](docs/testing/js-testing-report.png)
 
 All JavaScript code was tested using the Beautify tool Javascript validator and returned no errors. 
 
@@ -61,7 +59,7 @@ I then made sure it looked well from a SuperUser perspective as they have access
 
 [Wave WebAim](https://wave.webaim.org/) was used to do an evaluation of the accessibility of the website. 
 
-The full report can be found [here](https://wave.webaim.org/report#/https:wholebeans.herokuapp.com/)
+The full report can be found [here](https://wave.webaim.org/report#/https://wholebeans.herokuapp.com/)
 
 ### Lighthouse report 
 
