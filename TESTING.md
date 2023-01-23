@@ -34,7 +34,6 @@ Custom CSS has been validated using [W3C Jigsaw CSS Validation Service](https://
 It passed. However some warnings were raised but these were to do with extensions and Google fonts. 
 
 ![CSS Validation Screenshot](docs/testing/css-validation-screenshot.png)
-![CSS Validation Warnings](docs/testing/css-warnings.png)
 
 ### Test Case 003 
 ![Test Case 002](docs/testing/html-testing-report.png)
