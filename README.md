@@ -1,11 +1,11 @@
-![Wholebeans](docs/images/banner.png)
+![Wholebeans](docs/images/bannerout.png)
 
 <h1 align=center>Wholebeans - A Speciality Coffee Recipe Website</h1>
 
 <h2 align=center>Introduction</h2>
 
-<p align=center>Wholebeans is a website for speciality coffee lovers dedicated to sharing, creating and interacting with coffee recipes and baristas from all around the world. Whether you are just getting into coffee or are a professional barista, wholebeans is the one stop place for all coffee related recipes. <br><br>
-Browse through loads of different coffee recipes and even add your own! You can also comment and like other recipes to show your support. This website if perfect for anyone who is trying coffee from a new roaster or origin and is not sure how to diall it in for the perfect cup of coffee. Fear not, simply use the search bar to find a similar recipe for the wholebeans you plan to use. <br><br> Users can now search through different recipes that have already been added to the site and registered users can create, update, edit and delete recipes from the website and via the admin panel. <br><br> Wholebeans has been buiot using the Django framework in python, HTML and CSS, and provides user authentication and full CRUD functionaility for recipes </p>
+<p align=center>Wholebeans is a website for speciality coffee lovers dedicated to sharing, creating and interacting with coffee recipes and baristas from all around the world. Whether you are just getting into coffee or are a professional barista, wholebeans is the one-stop place for all coffee-related recipes. <br><br>
+Browse through loads of different coffee recipes and even add your own! You can also comment and like other recipes to show your support. This website is perfect for anyone who is trying coffee from a new roaster or origin and is not sure how to dial it in for the perfect cup of coffee. Fear not, simply use the search bar to find a similar recipe for the wholebeans you plan to use. <br><br> Users can now search through different recipes that have already been added to the site and registered users can create, update, edit and delete recipes from the website and via the admin panel. <br><br> Wholebeans has been built using the Django framework in python, HTML and CSS, and provides user authentication and full CRUD functionality for recipes </p>
 
 [Visit the live site on Heroku](https://wholebeans.herokuapp.com/)
 
@@ -19,17 +19,17 @@ Browse through loads of different coffee recipes and even add your own! You can 
 
 ### Concept 
 
-This project was created as part of the [Code Institute's](https://codeinstitute.net/) Diploma in Full-Stack Software Development. The aim of this project is to create a full-stack website that will show the skills I have gained in HTML, CSS and Javascript. 
+This project was created as part of the [Code Institute's](https://codeinstitute.net/) Diploma in Full-Stack Software Development. The project aims to create a full-stack website that will show the skills I have gained in HTML, CSS and Javascript. 
 
-The main purpose of this website is to provide a platform for like minded coffee connoisseurs who are looking for inspiration to brew the best coffee they can while being able to create and add their own recipes. A SuperUser will be able to approve, edit and delete user recipes in order to manage the content on the website. The targe audience for this website is anyone interested in speciality coffee from home coffee drinkers to professional baristas. There are so many variables to creating the perfect cup of coffee from the origin of the wholebeans used, brewing device and technique, and even the type of water used. This website is to be used almost like a diary and guide for coffee lovers. 
+The main purpose of this website is to provide a platform for like-minded coffee connoisseurs who are looking for inspiration to brew the best coffee they can while being able to create and add their own recipes. A SuperUser will be able to approve, edit and delete user recipes in order to manage the content on the website. The target audience for this website is anyone interested in speciality coffee from home coffee drinkers to professional baristas. There are so many variables to creating the perfect cup of coffee from the origin of the wholebeans used, brewing device and technique, and even the type of water used. This website is to be used almost like a diary and guide for coffee lovers. 
 
 <h3>Site goals</h3>
 
 * Create a platform that allows users to post their favourite coffee and share their thoughts through comments and likes under posts. 
 * The website is designed to be intuitive and easy to navigate. 
 * The website was designed to be responsive and to meet all screen sizes. 
-* The website should focus on the display of the posts/recipes and present in a convenient way that is easy to follow while you make your coffee. 
-* The website should appeal to both at home coffee drinkers but also professional baristas acting as a a coffee community hub. 
+* The website should focus on the display of the posts/recipes and present them in a convenient way that is easy to follow while you make your coffee. 
+* The website should appeal to both at-home coffee drinkers but also professional baristas acting as a coffee community hub. 
 
 ### User Stories
 
@@ -38,60 +38,60 @@ The main purpose of this website is to provide a platform for like minded coffee
 * I can search the website to find different recipes using keywords. 
 * I can see the view all page to see all coffee recipes. 
 * I can view the comments of the registered users. 
-* I can select a coffee recipe if i wish to see more detail on it.
+* I can select a coffee recipe if I wish to see more detail on it.
 
 <strong>As registered user:</strong>
 
 * I can register for a wholebeans account to allow me to access all of the functions throughout the website. 
-* I can create and share my own coffee recipes to other users to see. 
-* I can edit my recipes if i decide to change them. 
-* I can delete my recipe if i dont like it anymore. 
-* I can comment on other users recipes to give my thoughts. 
+* I can create and share my coffee recipes for other users to see. 
+* I can edit my recipes if I decide to change them. 
+* I can delete my recipe if I dont like it anymore. 
+* I can comment on other users' recipes to give my thoughts. 
 * I can like recipes to show my support for other users. 
 
 <strong>As a SuperUser:</strong>
 
 * I can create draft posts if i dont have time to finish the post. 
-* I can approve other users recipes before they are posted. 
-* I can edit other users recipes. 
-* I can delete other users recipes. 
+* I can approve other users' recipes before they are posted. 
+* I can edit other users' recipes. 
+* I can delete other users' recipes. 
 * I have access to the backend django admin system. 
 
 <strong>Agile Methodology</strong>
 
-I managed this projects functions and development through GitHubs projects Kanban board: 
+I managed this project's functions and development through GitHubs projects Kanban board: 
 
 [Wholebeans Coffee Recipes - USER STORIES](https://github.com/users/AdamVictory/projects/1)
 
 <h3>Scope</h3>
 
-* The website should be functional, easy to naviagte and intuitive. 
-* The frontend should present the content clearly. Visually appealing. 
-* Users to manipluate their content (CRUD). 
+* The website should be functional, easy to navigate and intuitive. 
+* The front end should present the content clearly. Visually appealing. 
+* Users to manipulate their content (CRUD). 
 * Allow logged in users to interact with other posts through comments. 
 * Search - all users can use the search bar to quickly find recipes. 
 * Comments and Likes - Users can comment and like other posts. 
-* Users can sign in and sign out to view the website from differnet perspectives. Also can register for an account. 
+* Users can sign in and sign out to view the website from different perspectives. Also can register for an account. 
 * Custom 404 & 500 pages for good UI. 
-* Use bootstrap to make the site responsive, and custom CSS and Java script. 
-* Create a webpage application using the django framework. 
+* Use bootstrap to make the site responsive, and custom CSS and Javascript. 
+* Create a webpage application using the Django framework. 
 
 
 ## The Structure Plane 
 <hr>
 
-<p>Wholebeans, will have four distint pages for first time users.</p>
+<p>Wholebeans, will have four pages for first-time users.</p>
 
   * Home page, Coffees, Register, Login, 
 
-<p>Users without an account can navigate through these four pages and will be able to see the details of each coffee recipe. However they will not be able to add their own recipes or like/comment with other users until the have signed up. 
+<p>Users without an account can navigate through these four pages and will be able to see the details of each coffee recipe. However, they will not be able to add their own recipes or like/comment with other users until the have signed up. 
 
 When the user creates an account and is logged in, the following pages will be displayed.</p>
 
-* Home page, coffees, Logout and my recipes. 
+* Home page, Coffees, Logout and My Recipes. 
 
-<p>Logged in usera will be able to access all of the sites pages. They can access all the details of each recipe while being able to interact with them. 
-They will also be able to access all of their recipes, to add new posts, edit old obnes or delete them.</p>
+<p>Logged in users will be able to access all of the website pages. They can access all the details of each recipe while being able to interact with them. 
+They will also be able to access all of their recipes, add new posts, edit old posts or delete them.</p>
 
 
 ## The Structure Plane 
@@ -101,9 +101,13 @@ They will also be able to access all of their recipes, to add new posts, edit ol
 
 ### Flowchart 
 
+I created this Flowchart using [Figma](https://www.figma.com/)
+
 ![Wholebeans Flowchart](docs/images/figma-flowchart.png)
 
 ## Database Schema 
+
+I created this Database Schema using [Figma](https://www.figma.com/)
 
 ![Database Schema](docs/images/databaseschema.png)
 
@@ -126,9 +130,9 @@ I created the wireframe using [Figma](https://www.figma.com/)
 
 ![Color Scheme](docs/images/colour-scheme.png)
 
-I kept the colour scheme simple for this project as i didnt want to distract the user too much and wanted the focus to be put on the recipe details. The blue is #2596be and the orange is #be4d25 .
+I kept the colour scheme simple for this project as i didn't want to distract the user too much and wanted the focus to be put on the recipe details. The blue is #2596be and the orange is #be4d25.
 
-All colours were generated from using [imagecolorpicker.com](https://imagecolorpicker.com/en). 
+All colours were generated by using [imagecolorpicker.com](https://imagecolorpicker.com/en). 
 
 ### Typography 
 
@@ -139,7 +143,7 @@ The font family for this project was: 'Sofia Sans', sans-serif; . I wanted to ke
 
 ### Imagery 
 
-I used [Unsplash](https://unsplash.com/) to source the main image for this project. The image is high quality and give good inspiration for users on the purpose of this website. I didn't want to add too many images as I knew the users would be doing that themselves. This image also acts as a default placeholder for those who do not have images to post themselves.  
+I used [Unsplash](https://unsplash.com/) to source the main image for this project. The image is high quality and gives good inspiration for users on the purpose of this website. I didn't want to add too many images as I knew the users would be doing that themselves. This image also acts as a default placeholder for those who do not have images to post themselves.  
 
 ![Background Image](docs/images/wholebeans.png)
 
@@ -171,32 +175,32 @@ This nav bar is for the super user. There is an additional link that allows them
 
 ### Banner
 
-This banner gives the general user / logged out user a clear idea of what the site should be used for and also two call to action buttons that states "Sign Up" and "Sign in". 
+This banner gives the general user / logged-out user a clear idea of what the site should be used for and also two call-to-action buttons that states "Sign Up" and "Sign in". 
 
 ![Banner Logged Out](docs/images/bannerout.png)
 
 
-Once the user has logged in their banner will now look like this. The new call to action button states "Add Recipe"
+Once the user has logged in their banner will now look like this. The new call-to-action button states "Add Recipe"
 ![Banner Logged In](docs/images/bannerin.png)
 
 
 ### Footer 
 
 My footer is very simple. It consists of social media links to push users to visit our social media channels. 
-It also consists of a sentance stating this website/project is for educational purposes only. \
+It also consists of a sentenance stating this website/project is for educational purposes only. \
 
 ![Footer](docs/images/footer.png)
 
 
 ### Other features 
 
-* Home page - Consists of a hero imahe, title and slogan, short description of the website and a call to action in the form of a Sign up or Log in button. It also shows the latest 6 recipes that have been added to the websiute 
+* Home page - Consists of a hero image, title and slogan, short description of the website and a call to action in the form of a Sign up or Log in button. It also shows the latest 6 recipes that have been added to the website.
 * All recipes - this page shows every recipe that has been added to the website. 
-* Add recipe - Thanks to summernote, the user can use their template to add their own coffee recipe. It allows basic styling, ordered lists and to upload images of their recipe. 
+* Add recipe - Thanks to summernote, the user can use their template to add their own coffee recipe. It allows basic styling, ordered lists and to upload images of recipes. 
 * My recipes - A page where users can see all of the recipes they have created and added to the website. They can edit or delete the recipes here. 
-* Log in , Log out, Sign up - Users can log in or create an account if they wish to have access to functionality only available to reigistered users. 
+* Log in , Log out, Sign up - Users can log in or create an account if they wish to have access to functionality only available to registered users. 
 * Recipe search - Users can use the search bar to find specific recipes they have in mind. 
-* Recipe cards and details - All recipes appear on the recipe as cardfs, when clicked on it will link them to a recipe detail page. Providing them with even more infomation on the recipe and also showing them if other users have liked or commented on that recipe, 
+* Recipe cards and details - All recipes appear on the recipe as cards, when clicked on it will link them to a recipe detail page. Providing them with even more information on the recipe and also showing them if other users have liked or commented on that recipe, 
 
 
 ### Future features 
@@ -212,22 +216,22 @@ Testing was done throughout this entire project. Each user story view was tested
 
 * Python 
     * The following modules were used: 
-          * asgiref==3.6.0
-          * cloudinary==1.31.0
-          * dj-database-url==0.5.0
-          * Django==3.2.16
-          * django-allauth==0.52.0
-          * django-cloudinary-storage==0.3.0
-          * django-crispy-forms==1.14.0
-          * django-summernote==0.8.20.0
-          * gunicorn==20.1.0
-          * oauthlib==3.2.2
-          * psycopg2==2.9.5
-          * PyJWT==2.6.0
-          * python3-openid==3.2.0
-          * pytz==2022.7.1
-          * requests-oauthlib==1.3.1
-          * sqlparse==0.4.3
+        * asgiref==3.6.0
+        * cloudinary==1.31.0
+        * dj-database-url==0.5.0
+        * Django==3.2.16
+        * django-allauth==0.52.0
+        * django-cloudinary-storage==0.3.0
+        * django-crispy-forms==1.14.0
+        * django-summernote==0.8.20.0
+        * gunicorn==20.1.0
+        * oauthlib==3.2.2
+        * psycopg2==2.9.5
+        * PyJWT==2.6.0
+        * python3-openid==3.2.0
+        * pytz==2022.7.1
+        * requests-oauthlib==1.3.1
+        * sqlparse==0.4.3
 
 
 
@@ -242,13 +246,12 @@ Testing was done throughout this entire project. Each user story view was tested
 * Bootstrap - For styling of CSS/JS
 * Django templating - main framework
 * Figma - creating wireframes, flowchart and database schema. 
-* Hatchful - by shopify was used to design the logo and favicons. 
 * Font Awesome - icons 
 * Gitpod - Create/edit code
 * GitHub - Repository to store code 
 * Google Fonts - fonts for text 
 * Cloudinary - upload imahes ad cloud hosting 
-* JPG to WEBP | Cloudconvert 
+* JPG to WEBP | Cloudconvert - make imagery more accessible for web users. 
 * Coolers - choose colour palette
 * DevTools - assist development
 * WAVE - To test accessibility 
@@ -256,6 +259,7 @@ Testing was done throughout this entire project. Each user story view was tested
 * JShint - To test JavaScript
 * Jigsaw - To test CSS
 * Validator - To test HTML code 
+* Favicon.io - To create different favicon sizes. 
 
 
 ### Resources 
@@ -298,34 +302,25 @@ Testing was done throughout this entire project. Each user story view was tested
 
 13. In settings.py add the STATIC files settings
 
+14. In settings.py inside the Django project I changed DEBUG = False;
+
+15. Also in the settings.py file I added X_FRAME_OPTIONS = "SAMEORIGIN";
+
+16. In Heroku I went back to Settings > Config VARS and removed the DISABLE_COLLECTSTATIC var;
+
+16. In Heroku I navigated to the Deploy section;
+
+17. I clicked to connect to GitHub and searched for my repository for this project. I clicked on manual deploy to build the App.  When finished, I clicked the View button, which redirected me to the live site.
+
+### Credits 
+
+* Code Institute's Django Blog walkthrough. 
+* Unsplash for the main image and placeholder image. 
+* How to create a search bar by John Elder on YouTube, 
+* Create custom 404 error by Cryce Truly 
 
 
 
-* In settings.py inside the Django project I changed DEBUG = False;
-* Also in the settings.py file I added X_FRAME_OPTIONS = "SAMEORIGIN";
-* In Heroku I went back to Settings > Config VARS and removed the DISABLE_COLLECTSTATIC var;
-* In Heroku I navigated to the Deploy section;
-* I clicked to connect to GitHub and searched for my repository for this project;
-* I clicked on manual deploy to build the App;
-* When finished, I clicked the View button, which redirected me to the live site.
-
-
-<h2>Fork</h2>
-
-* Forks let you make changes to a project without affecting the original repository. Follow this steps:
-1. Go to the repository page, can be accessed here.
-2. On top right, you select the Fork option and proceed.
-3. A duplicate will be created inside your repository.
-
-<h2>Clone</h2>
-
-* Clone let you create an identical repository to the original. Follow this steps:
-1. Go to the repository page, can be accessed here.
-2. Click on code drop down menu.
-3. Choose if you want to clone using HTTPS, SSH or GitHub CLI. Then select de copy button.
-4. Open your Git Bash in your IDE.
-5. Type git clone and then paste the URL you copied before.
-6. Press Enter to create your clone.
 
 
 
